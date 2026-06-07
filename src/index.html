@@ -9,16 +9,13 @@
     <link inline rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <a class="sr-only" href="#main-content">Skip to main content.</a>
-
-    <main id="main-content">
-
+    <header>
         <h1>James Voss Grumish</h1>
-
-        <div class="cols">
+    </header>
+    <main>
+        <div class="columns">
             <div>
-                <p>Hello! My name is James.</p>
+                <p>Hello! My name is James<span class="sr-only"> Grumish</span>.</p>
                 <p>As a digital marketing website product owner, I collaborate with stakeholders to deliver <nobr>value-driven</nobr> digital solutions.</p>
                 <p>Additionally, I am a Scrum framework advocate and have experience in B2B website strategy and development.</p>
                 <p>I live and work near Minneapolis, Minnesota, USA.</p>
@@ -31,41 +28,41 @@
             </div>
         </div>
 
-        <nav id="connect">
-            <h1>Connect</h1>
-            <a href="mailto:jamesvg@gmail.com" rel="noreferrer noopener">jamesvg@gmail.com</a>
-            <a href="https://www.linkedin.com/in/jamesvg/" rel="noreferrer noopener">Linkedin jamesvg</a>
-        </nav>
+        <section class="connect" id="connect">
+            <h2>Connect<span class="sr-only"> with James Grumish</span></h2>
+            <div class="connect__links">
+                <a href="mailto:jamesvg@gmail.com" rel="noreferrer noopener">jamesvg@gmail.com</a>
+                <a href="https://www.linkedin.com/in/jamesvg/" rel="noreferrer noopener">Linkedin jamesvg</a>
+            </div>
+        </section>
 
         <section>
-            <h1>Certifications</h1>
+            <h2>Active Certifications<span class="sr-only"> held by James Grumish</span></h2>
             <ul>
                 <li>Professional Scrum Product Owner &ndash; <a href="https://www.credly.com/badges/aafdb5af-8e75-4f2d-b094-d0dd92bf6a3f" rel="noreferrer noopener">PSPO II</a></li>
                 <li>Professional Scrum Master &ndash; <a href="https://www.credly.com/badges/5dc26e02-0bad-42e8-8231-ca64580addb8/public_url" rel="noreferrer noopener">PSM I</a></li>
             </ul>
         </section>
 
-        <section>
-            <h1>Presentations</h1>
+        <section class="presentations">
+            <h2>Presentations<span class="sr-only"> available from James Grumish</span></h2>
             <p>These presentations were originally prepared for conferences, workshops, and meetups.</p>
             <p>If you would like to know more about these topics or coordinate a presentation or webinar for your team, please let me know.</p>
-            <dl>
-                <dt>Software Estimation: Estimate better by understanding uncertainty</dt>
-                <dd>
-                    <p>Learn smart ways to consider and estimate time-based resources for deliverable work. Understand how uncertainty can be accounted for, but also conveyed in an estimate. Use these tools to estimate your efforts better and faster. This discussion is intended for marketing agency developers, project managers, and account managers.</p>
-                </dd>
-                <dt>Compliance: Staying afloat in a sea of acronyms</dt>
-                <dd>
-                    <p>ADA, GDPR, HIPAA, CAN-SPAM, SOX, GLBA, CCPA, PCI, COPPA, OPDP, LGPD. Learn a few strategies for maintaining websites and other marketing initiatives that require some sort of legal compliance. This discussion will give a high-level introduction to several compliance standards and some general processes for bringing a project into compliance. This discussion is intended for marketing managers and their agency counterparts.</p>
-                </dd>
-            </dl>
+            <div class="presentations__item">
+                <h3>Software Estimation: Estimate better by understanding uncertainty</h3>
+                <p>Learn smart ways to consider and estimate time-based resources for deliverable work. Understand how uncertainty can be accounted for, but also conveyed in an estimate. Use these tools to estimate your efforts better and faster. This discussion is intended for marketing agency developers, project managers, and account managers.</p>
+            </div>
+            <div class="presentations__item">
+                <h3>Compliance: Staying afloat in a sea of acronyms</h3>
+                <p>ADA, GDPR, HIPAA, CAN-SPAM, SOX, GLBA, CCPA, PCI, COPPA, OPDP, LGPD. Learn a few strategies for maintaining websites and other marketing initiatives that require some sort of legal compliance. This discussion will give a high-level introduction to several compliance standards and some general processes for bringing a project into compliance. This discussion is intended for marketing managers and their agency counterparts.</p>
+            </div>
         </section>
 
-      <section>
-        <h1>Let's talk!</h1>
-        <p>I appreciate that you would take the time to know me a little better.</p>
-        <p>Please reach out via any of my <a href="#connect">contacts &uarr;</a> listed above.</p>
-      </section>
+        <section>
+            <h2>Let's talk!</h2>
+            <p>I appreciate that you would take the time to know me a little better.</p>
+            <p>Please reach out via any of my <a href="#connect">contact methods &uarr;</a>.</p>
+        </section>
     </main>
 </body>
 </html>

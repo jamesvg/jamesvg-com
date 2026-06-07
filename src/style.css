@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0 0 20vh;
+    margin: 10vh 0 25vh;
+    padding: 0;
 }
 
 a,
@@ -18,32 +18,31 @@ a:visited {
     color: #06c;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Optima, Cambria, Palatino, Times, 'Times New Roman', serif;
+    line-height: 1.3;
 }
 
 img {
+    width: 100%;
     max-width: 296px;
     height: auto;
 }
 
+header,
 main {
     margin: 0 auto;
     width: 90vw;
-    max-width: 800px;
+    max-width: 60ch;
 }
 
-nav {
+.connect__links {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-nav h1 {
-    width: 100%;
-}
-
-nav a {
+.connect__links a {
     display: block;
     margin-bottom: .8em;
     border: 1px solid #ccc;
@@ -55,78 +54,65 @@ nav a {
     transition: .4s all;
 }
 
-nav a:hover,
-nav a:focus {
-    border-color: #aaa;
+.connect__links a:hover,
+.connect__links a:focus {
+    border-color: #06c;
     background-color: #eee;
-    color: #333;
 }
 
-dl {
+.presentations__item {
+    border-left: 2px solid #ccc;
     padding: 0 1.2rem;
 }
 
-dt {
-    font-weight: 700;
+.presentations__item h3 {
     font-style: italic;
 }
 
-dt:not(:first-child) {
+.presentations__item + .presentations__item {
     margin-top: 2em;
 }
 
-dd {
-    margin: 0;
-    padding: 0;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
 
     html {
-        font-size: 3.125vw;
+        font-size: 18px;
         line-height: 1.7;
     }
 
-    .cols {
+    .columns {
         display: flex;
     }
 
-    .cols > div {
+    .columns > div {
         flex: none;
         width: 60%;
     }
 
-    .cols > div + div {
+    .columns > div + div {
         flex: auto;
         margin-left: 3%;
     }
 
-    nav a {
+    .columns > div > :first-child {
+        margin-top: 0;
+    }
+
+    .connect__links a {
         width: 48%;
         padding: .3em .6em;
-    }
-}
-
-@media screen and (min-width: 700px) {
-
-    html {
-        font-size: 22px;
     }
 }
 
 @media screen and (min-width: 800px) {
 
     html {
-        font-size: 22px;
+        font-size: 21px;
         line-height: 1.8;
     }
 
-    dl {
-        padding: 0 2rem;
-    }
-
-    nav a,
-    dd {
+    .connect__links a,
+    .presentations__item p {
         font-size: .8em;
     }
 }
